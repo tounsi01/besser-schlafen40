@@ -108,6 +108,21 @@ document.querySelectorAll(".quiz").forEach((quizEl) => {
       resultBox.innerHTML = `
         <h3>${resultTitle}</h3>
         <p class="quiz-diagnosis"><strong>Kurze Einordnung:</strong> Schlafprobleme ${level}. ${diagnosis}</p>
+        <figure class="quiz-result-media">
+          <img
+            src="https://images.pexels.com/photos/3771115/pexels-photo-3771115.jpeg?auto=compress&cs=tinysrgb&fm=webp&w=960"
+            srcset="
+              https://images.pexels.com/photos/3771115/pexels-photo-3771115.jpeg?auto=compress&cs=tinysrgb&fm=webp&w=480 480w,
+              https://images.pexels.com/photos/3771115/pexels-photo-3771115.jpeg?auto=compress&cs=tinysrgb&fm=webp&w=960 960w
+            "
+            sizes="(max-width: 920px) 100vw, 44rem"
+            alt="Ruhige Abendatmosphaere fuer besseren Schlaf ab 40"
+            loading="lazy"
+            decoding="async"
+            width="960"
+            height="640"
+          />
+        </figure>
         <ul class="quiz-recommendations">${personalizedRecommendations.join("")}</ul>
         <p class="quiz-result-actions">
           <a class="button" href="${link}">Jetzt passende Produktempfehlungen ansehen</a>
