@@ -294,6 +294,17 @@ button.button:active {
   text-align: center;
 }
 
+.hero--premium .hero-main-cta-sub {
+  margin: 0.48rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  color: rgba(186, 198, 214, 0.92);
+  line-height: 1.45;
+  text-align: left;
+  max-width: 22rem;
+}
+
 @media (min-width: 480px) {
   .hero-neowake-rec__cta .button {
     width: auto;
@@ -778,6 +789,62 @@ p {
   background: #f8fafc;
 }
 
+.social-proof-badges {
+  padding: 1.35rem 0 1.5rem;
+  background: linear-gradient(180deg, #fafcfb 0%, #f3f7f4 55%, #eef3f0 100%);
+  border-bottom: 1px solid rgba(74, 114, 104, 0.11);
+}
+
+.social-proof-badges__row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem 1rem;
+}
+
+.social-proof-badges__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0.72rem 1.35rem;
+  min-height: 2.85rem;
+  max-width: min(100%, 19.5rem);
+  background: linear-gradient(165deg, #ffffff 0%, #fafdfb 100%);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 999px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 10px 28px rgba(74, 114, 104, 0.09);
+}
+
+.social-proof-badges__label {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #2a3f38;
+  line-height: 1.38;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .social-proof-badges__badge {
+    max-width: none;
+    flex: 0 1 auto;
+    padding: 0.78rem 1.5rem;
+  }
+
+  .social-proof-badges__label {
+    font-size: 0.91rem;
+  }
+}
+
 .why-sleep-worse h2 {
   text-align: center;
   max-width: 38rem;
@@ -803,6 +870,66 @@ p {
 .why-sleep-worse__cta {
   margin: 1.55rem 0 0;
   text-align: center;
+}
+
+.urgency-symptoms {
+  padding: 1.85rem 0 1.95rem;
+  background: linear-gradient(180deg, #fffaf6 0%, #f4f1ec 55%, #eef0eb 100%);
+  border-top: 1px solid rgba(180, 90, 50, 0.12);
+  border-bottom: 1px solid rgba(74, 114, 104, 0.1);
+}
+
+.urgency-symptoms__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.urgency-symptoms__title {
+  margin: 0 0 1rem;
+  max-width: 28rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.14rem, 2.7vw, 1.46rem);
+  font-weight: 600;
+  color: #3a302a;
+  line-height: 1.3;
+}
+
+.urgency-symptoms__list {
+  list-style: none;
+  margin: 0 0 1.3rem;
+  padding: 0;
+  width: fit-content;
+  max-width: 100%;
+  text-align: left;
+}
+
+.urgency-symptoms__list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4a4039;
+  line-height: 1.5;
+}
+
+.urgency-symptoms__list li:last-child {
+  margin-bottom: 0;
+}
+
+.urgency-symptoms__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.urgency-symptoms__cta {
+  margin: 0;
 }
 
 .trust-below-hero {
