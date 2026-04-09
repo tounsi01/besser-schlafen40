@@ -9,19 +9,34 @@
       name="description"
       content="Schlafprobleme ab 40 verstehen und lösen: Ratgeber, Quiz und unabhängige Produktempfehlungen für Männer und Frauen 40+."
     />
-    <meta
-      name="keywords"
-      content="Schlafprobleme ab 40, besser schlafen, Durchschlafstörungen, Schlafstörungen Frauen 40, Schlafstörungen Männer 40"
-    />
     <link rel="canonical" href="https://www.besser-schlafen40.de/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="SchlafGut 40+ | Besser schlafen ab 40" />
     <meta
       property="og:description"
-      content="Professioneller Schlaf-Ratgeber für Erwachsene 40+ mit Quiz, Blog und Empfehlungen."
+      content="Schlafprobleme ab 40 verstehen: Quiz, Ratgeber und sorgfältig ausgewählte Empfehlungen für ruhigere Nächte."
     />
     <meta property="og:url" content="https://www.besser-schlafen40.de/" />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:locale" content="de_DE" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+    />
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&amp;cs=tinysrgb&amp;fm=webp&amp;w=1200"
+      imagesrcset="https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&amp;cs=tinysrgb&amp;fm=webp&amp;w=640 640w, https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&amp;cs=tinysrgb&amp;fm=webp&amp;w=1200 1200w"
+      imagesizes="(max-width: 920px) 100vw, 40vw"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,10 +47,27 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "SchlafGut 40+",
-        "url": "https://www.besser-schlafen40.de/",
-        "inLanguage": "de"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.besser-schlafen40.de/#organization",
+            "name": "SchlafGut 40+",
+            "url": "https://www.besser-schlafen40.de/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.besser-schlafen40.de/favicon.svg"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.besser-schlafen40.de/#website",
+            "name": "SchlafGut 40+",
+            "url": "https://www.besser-schlafen40.de/",
+            "inLanguage": "de",
+            "publisher": { "@id": "https://www.besser-schlafen40.de/#organization" },
+            "description": "Ratgeberportal für besseren Schlaf ab 40 mit Quiz, Artikeln und transparent gekennzeichneten Empfehlungen."
+          }
+        ]
       }
     </script>
   </head>
@@ -73,16 +105,41 @@
               Schlechter Schlaf ab 40? Endlich wieder erholsam schlafen
               </h1>
               <p class="hero-lead">
-                Finden Sie die Ursache Ihrer Schlafprobleme und entdecken Sie
-                natürliche Lösungen.
+                Finde die Ursache deiner Schlafprobleme und entdecke natürliche
+                Lösungen – Schritt für Schritt, ohne Überforderung.
               </p>
-              <div class="hero-actions">
-                <a class="button" href="https://neowake.de/jetzt-testen#aff=Amouna" rel="sponsored nofollow">Jetzt besser schlafen</a>
-                <a class="button alt" href="/artikel/schlafstoerungen-ab-40.html"
-                  >Zum Ratgeber</a
-                >
+              <div
+                class="hero-neowake-rec"
+                aria-label="Neowake Schlafprogramm Empfehlung"
+              >
+                <span class="hero-neowake-rec__badge">Top Empfehlung 40+</span>
+                <p class="hero-neowake-rec__name">Neowake Schlafprogramm</p>
+                <p class="hero-neowake-rec__audio-brand" aria-hidden="true">
+                  Audio · sanfte Entspannung · Abendroutine
+                </p>
+                <p class="hero-neowake-rec__teaser">
+                  Kurze, geführte Hör-Sessions statt Tablettenstress — für
+                  erholsameres Einschlafen ab 40.
+                </p>
+                <p class="hero-neowake-rec__cta">
+                  <a
+                    class="button"
+                    href="https://neowake.de/jetzt-testen#aff=Amouna"
+                    rel="sponsored nofollow"
+                    >Jetzt besser schlafen mit Neowake</a
+                  >
+                </p>
               </div>
+              <div class="hero-actions">
+                <a class="button alt" href="/quiz/">Kostenloser Schlaf-Check</a>
+              </div>
+              <p class="hero-secondary muted">
+                <a href="/artikel/schlafstoerungen-ab-40.html">Zum ausführlichen Ratgeber</a>
+                ·
+                <a href="/neowake.html">Neowake erklärt</a>
+              </p>
               <div class="trust-row" aria-label="Vertrauensmerkmale">
+                <span class="trust-pill trust-pill--neowake">Top Empfehlung 40+</span>
                 <span class="trust-pill trust-pill--star">4,8 / 5 Leser-Feedback</span>
                 <span class="trust-pill trust-pill--leaf">Ruhig &amp; faktenorientiert</span>
                 <span class="trust-pill trust-pill--lock">Kein Abo · keine versteckten Kosten</span>
@@ -127,12 +184,17 @@
       >
         <div class="container">
           <div class="top-recommendation__panel">
-            <span class="top-recommendation__badge">Empfohlen für 40+</span>
+            <span class="top-recommendation__badge top-recommendation__badge--trust"
+              >Top Empfehlung 40+</span
+            >
             <h2 id="top-rec-heading">
               Unsere Top-Empfehlung für besseren Schlaf ab 40
             </h2>
             <p class="top-recommendation__subtitle">
               Natürlich, ohne Medikamente — entwickelt für Menschen ab 40
+            </p>
+            <p class="top-recommendation__audio-brand" aria-hidden="true">
+              Neowake · ruhige Audio-Sessions für die Nacht
             </p>
             <ul class="top-recommendation__bullets">
               <li>Einschlafen schneller</li>
@@ -144,7 +206,7 @@
                 class="button"
                 href="https://neowake.de/jetzt-testen#aff=Amouna"
                 rel="sponsored nofollow"
-                >Jetzt Neowake entdecken</a
+                >Jetzt besser schlafen mit Neowake</a
               >
             </p>
           </div>
@@ -153,9 +215,12 @@
 
       <section class="section" id="quiz-einstieg">
         <div class="container">
-          <span class="pill">Schlaf Test</span>
-          <h2>Warum schlafen Sie schlecht?</h2>
-          <p class="section-intro muted">30 Sekunden Schlaf Test</p>
+          <span class="pill">Schlaf-Check</span>
+          <h2>Warum schläfst du schlecht?</h2>
+          <p class="section-intro muted">
+            Vier kurze Fragen, etwa zwei Minuten – danach siehst du eine klare
+            Einordnung und passende nächste Schritte.
+          </p>
           <div class="quiz-embed-card">
             <iframe
               src="/quiz/"
@@ -271,8 +336,11 @@
             </div>
             <div class="program-card__content">
               <h3>Schlaf-Routine + Produktwahl mit System</h3>
+              <p class="program-card__audio-brand" aria-hidden="true">
+                Neowake · sanfte Audio-Begleitung am Abend
+              </p>
               <ul class="list-clean">
-                <li>Orientierung per Schlaf-Quiz in unter 1 Minute</li>
+                <li>Orientierung per Schlaf-Quiz in wenigen Minuten</li>
                 <li>Nur passende Empfehlungen statt teurer Fehlkäufe</li>
                 <li>Bestehende Artikel und Vergleich direkt verlinkt</li>
               </ul>
@@ -285,7 +353,7 @@
                 class="button"
                 href="https://neowake.de/jetzt-testen#aff=Amouna"
                 rel="sponsored nofollow"
-                >Schlafprogramm testen</a
+                >Jetzt besser schlafen mit Neowake</a
               >
             </div>
           </article>
@@ -306,7 +374,7 @@
             </p>
           </div>
           <div class="cta-band__actions">
-            <a class="button" href="https://neowake.de/jetzt-testen#aff=Amouna" rel="sponsored nofollow">Natürlich besser schlafen ab 40</a>
+            <a class="button" href="https://neowake.de/jetzt-testen#aff=Amouna" rel="sponsored nofollow">Jetzt besser schlafen mit Neowake</a>
             <a class="button alt" href="#empfehlungen">Direkt zu Empfehlungen</a>
           </div>
         </div>
@@ -326,6 +394,7 @@
               <thead>
                 <tr>
                   <th scope="col">Kriterium</th>
+                  <th scope="col">Neowake Schlafprogramm</th>
                   <th scope="col">Nackenkissen</th>
                   <th scope="col">Schlafmaske</th>
                   <th scope="col">Magnesium (Abend)</th>
@@ -334,27 +403,56 @@
               <tbody>
                 <tr>
                   <th scope="row">Typisches Anliegen</th>
+                  <td>Grübeln, Stress, fehlende Abendroutine</td>
                   <td>Nacken, Schulter, unruhiges Liegen</td>
                   <td>Früh aufwachen, Licht, Schichtarbeit</td>
                   <td>Innere Anspannung, Krämpfe</td>
                 </tr>
                 <tr>
                   <th scope="row">Wirkung oft spürbar</th>
+                  <td class="pick">Häufig nach 1–2 Wochen konsequenter Nutzung</td>
                   <td class="pick">Nach wenigen Nächten</td>
                   <td class="pick">Sofort (Lichtschutz)</td>
                   <td>Meist nach 1–2 Wochen Routine</td>
                 </tr>
                 <tr>
                   <th scope="row">Aufwand</th>
+                  <td>Kurze Audio-Session am Abend</td>
                   <td>Gering (einmal wählen)</td>
                   <td>Sehr gering</td>
                   <td>Täglich zur gleichen Zeit</td>
                 </tr>
                 <tr>
                   <th scope="row">Gut kombinierbar mit</th>
+                  <td>Kissen, Maske &amp; ruhiger Schlafraum</td>
                   <td>Maske + Ritual</td>
                   <td>Kissen + Ritual</td>
                   <td>Kissen + Maske</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mehr erfahren</th>
+                  <td>
+                    <a
+                      href="https://neowake.de/jetzt-testen#aff=Amouna"
+                      rel="sponsored nofollow"
+                      >Jetzt besser schlafen mit Neowake</a
+                    >
+                  </td>
+                  <td>
+                    <a href="/artikel/schlafstoerungen-ab-40.html#empfehlungen"
+                      >Ratgeber</a
+                    >
+                  </td>
+                  <td>
+                    <a href="/artikel/schlafstoerungen-ab-40.html#empfehlungen"
+                      >Ratgeber</a
+                    >
+                  </td>
+                  <td>
+                    <a href="/artikel/magnesium-bei-schlafproblemen-wirkung-dosierung.html"
+                      >Magnesium-Artikel</a
+                    >
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -363,6 +461,10 @@
             Unsicher? Starte mit dem
             <a href="/quiz/">Quiz</a> – die Empfehlungen darunter sind danach
             leichter einzuordnen.
+          </p>
+          <p class="compare-audio-hint muted">
+            Neowake nutzt kurze Hör-Sessions zur Entspannung — ideal kombinierbar
+            mit Kissen, Maske oder Mineralstoff-Routine.
           </p>
         </div>
       </section>
@@ -402,7 +504,11 @@
                 <li>Langfristige Nutzung pro Nacht</li>
               </ul>
               <div class="rec-card__foot">
-                <button type="button" class="button">Angebot prüfen</button>
+                <a
+                  class="button"
+                  href="/artikel/schlafstoerungen-ab-40.html#empfehlungen"
+                  >Jetzt entdecken</a
+                >
               </div>
             </article>
             <article class="rec-card rec-card--featured">
@@ -430,7 +536,11 @@
                 <li>Gute Ergänzung zu jedem Kissen</li>
               </ul>
               <div class="rec-card__foot">
-                <button type="button" class="button">Jetzt vergleichen</button>
+                <a
+                  class="button"
+                  href="/artikel/schlafstoerungen-ab-40.html#empfehlungen"
+                  >Empfehlung ansehen</a
+                >
               </div>
             </article>
             <article class="rec-card">
@@ -458,10 +568,21 @@
                 <li>Bitte Dosierung/Wechselwirkungen beachten</li>
               </ul>
               <div class="rec-card__foot">
-                <button type="button" class="button">Preis &amp; Anbieter</button>
+                <a
+                  class="button"
+                  href="/artikel/magnesium-bei-schlafproblemen-wirkung-dosierung.html"
+                  >Besser schlafen starten</a
+                >
               </div>
             </article>
           </div>
+          <p class="empfehlungen-audio-note muted">
+            Für eine strukturierte Abendroutine mit Audio:
+            <a href="/neowake.html">Neowake im Detail</a> oder direkt
+            <a href="https://neowake.de/jetzt-testen#aff=Amouna" rel="sponsored nofollow"
+              >Jetzt besser schlafen mit Neowake</a
+            >.
+          </p>
         </div>
       </section>
 
@@ -475,7 +596,7 @@
           <a class="button" href="/artikel/schlafstoerungen-ab-40.html"
             >Ratgeber lesen</a
           >
-          <a class="button alt" href="https://neowake.de/jetzt-testen#aff=Amouna" rel="sponsored nofollow">Schlafprogramm testen</a>
+          <a class="button alt" href="https://neowake.de/jetzt-testen#aff=Amouna" rel="sponsored nofollow">Jetzt besser schlafen mit Neowake</a>
         </div>
       </div>
 
@@ -484,6 +605,7 @@
           <div class="trust-strip" role="group" aria-label="Warum du uns vertrauen kannst">
             <span class="trust-strip__item">Klare Affiliate-Kennzeichnung</span>
             <span class="trust-strip__item">Auswahl nach Eignung, nicht nach „Werbepreis“</span>
+            <span class="trust-strip__item">Inhalte regelmäßig geprüft (Stand 2026)</span>
             <span class="trust-strip__item">Kein Druck – du entscheidest in Ruhe</span>
             <span class="trust-strip__item">Medizinische Fragen: bitte zum Arzt</span>
           </div>
@@ -520,9 +642,9 @@
           <details>
             <summary>Warum stehen hier Affiliate-Links?</summary>
             <p>
-              Sie finanzieren redaktionelle Inhalte. Wir kennzeichnen sie und
-              wählen Angebote, die zur Zielgruppe 40+ und zu typischen
-              Schlafproblemen passen – ohne versteckte Zusatzkosten für dich.
+              Diese Links können unsere Arbeit unterstützen, ohne dass dir
+              Mehrkosten entstehen. Wir kennzeichnen sie klar und wählen Angebote,
+              die zur Zielgruppe 40+ und zu typischen Schlafproblemen passen.
             </p>
           </details>
           <details>

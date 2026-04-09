@@ -129,6 +129,9 @@ document.querySelectorAll(".quiz").forEach((quizEl) => {
             Basierend auf Ihren Antworten empfehlen wir
           </h4>
           <div class="quiz-result-neowake__highlight">Neowake Schlafprogramm</div>
+          <p class="quiz-result-neowake__audio-brand">
+            Geführte Audio-Entspannung für eine ruhigere Abendroutine
+          </p>
           <p class="quiz-result-neowake__desc">
             Natürliches Schlafprogramm ohne Medikamente
           </p>
@@ -155,14 +158,14 @@ document.querySelectorAll(".quiz").forEach((quizEl) => {
               class="button"
               href="https://neowake.de/jetzt-testen#aff=Amouna"
               rel="sponsored nofollow"
-              >Jetzt testen</a
+              >Jetzt besser schlafen mit Neowake</a
             >
           </p>
         </section>
         <ul class="quiz-recommendations">${personalizedRecommendations.join("")}</ul>
         <p class="quiz-result-actions">
-          <a class="button" href="${link}">Jetzt passende Produktempfehlungen ansehen</a>
-          <a class="button alt" href="/#vergleich">Zur Vergleichsseite</a>
+          <a class="button" href="${link}">Passende Ratgeber-Tipps lesen</a>
+          <a class="button alt" href="/#vergleich">Produkte vergleichen</a>
         </p>
         <p class="quiz-reassurance">Hinweis: Diese Auswertung dient deiner Orientierung und ersetzt keine medizinische Diagnose. Viele Schlafprobleme lassen sich mit passenden Gewohnheiten und der richtigen Unterstützung spürbar verbessern.</p>
       `;

@@ -239,6 +239,67 @@ button.button:active {
   color: #e2e8f0;
 }
 
+.hero-neowake-rec {
+  margin: 1rem 0 1.15rem;
+  padding: 0.95rem 1.05rem 1.05rem;
+  border-radius: 14px;
+  border: 1px solid rgba(125, 211, 252, 0.38);
+  background: rgba(15, 23, 42, 0.58);
+  box-shadow: 0 12px 32px rgba(2, 6, 23, 0.35);
+}
+
+.hero-neowake-rec__badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  padding: 0.22rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  background: rgba(196, 165, 116, 0.38);
+  border: 1px solid rgba(253, 224, 200, 0.42);
+  color: #fffbeb;
+}
+
+.hero-neowake-rec__name {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.02rem, 2.2vw, 1.12rem);
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.hero-neowake-rec__audio-brand {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(125, 211, 252, 0.88);
+}
+
+.hero-neowake-rec__teaser {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+}
+
+.hero-neowake-rec__cta {
+  margin: 0;
+}
+
+.hero-neowake-rec__cta .button {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .hero-neowake-rec__cta .button {
+    width: auto;
+  }
+}
+
 .hero-media {
   display: grid;
   grid-template-columns: 1fr;
@@ -298,6 +359,24 @@ button.button:active {
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.28);
   color: #e2e8f0;
+}
+
+.top-recommendation__badge--trust {
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  background: rgba(196, 165, 116, 0.28);
+  border-color: rgba(253, 224, 200, 0.35);
+  color: #fef9c3;
+}
+
+.top-recommendation__audio-brand {
+  margin: -0.25rem 0 0.9rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #94a3b8;
 }
 
 .top-recommendation h2 {
@@ -451,6 +530,22 @@ main.section > article.container > .breadcrumb + h1::before {
   font-size: 0.9rem;
   line-height: 1;
   opacity: 0.92;
+}
+
+.trust-pill--neowake::before {
+  content: "♪";
+  color: #b45309;
+  font-size: 0.85rem;
+}
+
+.hero--premium .trust-pill--neowake {
+  border-color: rgba(253, 224, 200, 0.4);
+  background: rgba(196, 165, 116, 0.22);
+  color: #fffbeb;
+}
+
+.hero--premium .trust-pill--neowake::before {
+  color: #fde68a;
 }
 
 .trust-pill--star::before {
@@ -771,6 +866,15 @@ p {
   font-weight: 600;
   color: var(--brand-strong);
   line-height: 1.25;
+}
+
+.quiz-result-neowake__audio-brand {
+  margin: 0 0 0.5rem;
+  font-size: 0.84rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #5a6b63;
+  line-height: 1.45;
 }
 
 .quiz-result-neowake__highlight {
@@ -1094,6 +1198,22 @@ p {
   margin: 0.6rem 0 0;
 }
 
+.compare-audio-hint {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0.45rem 0 0;
+  max-width: 44rem;
+}
+
+.program-card__audio-brand {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
 .trust-strip {
   display: flex;
   flex-wrap: wrap;
@@ -1158,6 +1278,23 @@ p {
   min-height: 520px;
   border: 0;
   background: #fff;
+}
+
+.hero-secondary {
+  margin: 0.65rem 0 0;
+  font-size: 0.92rem;
+}
+
+.hero-secondary a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.empfehlungen-audio-note {
+  margin: 1rem 0 0;
+  max-width: 42rem;
+  line-height: 1.55;
 }
 
 .quiz-embed-footer {
