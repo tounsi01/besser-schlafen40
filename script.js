@@ -123,6 +123,42 @@ document.querySelectorAll(".quiz").forEach((quizEl) => {
             height="640"
           />
         </figure>
+        <section class="quiz-result-neowake" aria-labelledby="quiz-neowake-heading">
+          <span class="quiz-result-neowake__badge">Top Empfehlung 40+</span>
+          <h4 id="quiz-neowake-heading" class="quiz-result-neowake__title">
+            Basierend auf Ihren Antworten empfehlen wir
+          </h4>
+          <div class="quiz-result-neowake__highlight">Neowake Schlafprogramm</div>
+          <p class="quiz-result-neowake__desc">
+            Natürliches Schlafprogramm ohne Medikamente
+          </p>
+          <p class="quiz-result-neowake__text">
+            Viele Leser berichten von schnellerem Einschlafen und tieferem Schlaf
+          </p>
+          <figure class="quiz-result-neowake__media">
+            <img
+              src="https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&cs=tinysrgb&fm=webp&w=960"
+              srcset="
+                https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&cs=tinysrgb&fm=webp&w=480 480w,
+                https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg?auto=compress&cs=tinysrgb&fm=webp&w=960 960w
+              "
+              sizes="(max-width: 920px) 100vw, 44rem"
+              alt="Ruhige Schlafatmosphaere fuer erholsamen Schlaf ab 40"
+              loading="lazy"
+              decoding="async"
+              width="960"
+              height="640"
+            />
+          </figure>
+          <p class="quiz-result-neowake__cta">
+            <a
+              class="button"
+              href="https://neowake.de/jetzt-testen#aff=Amouna"
+              rel="sponsored nofollow"
+              >Jetzt testen</a
+            >
+          </p>
+        </section>
         <ul class="quiz-recommendations">${personalizedRecommendations.join("")}</ul>
         <p class="quiz-result-actions">
           <a class="button" href="${link}">Jetzt passende Produktempfehlungen ansehen</a>
