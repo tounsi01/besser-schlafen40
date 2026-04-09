@@ -239,6 +239,67 @@ button.button:active {
   color: #e2e8f0;
 }
 
+.hero-neowake-rec {
+  margin: 1rem 0 1.15rem;
+  padding: 0.95rem 1.05rem 1.05rem;
+  border-radius: 14px;
+  border: 1px solid rgba(125, 211, 252, 0.38);
+  background: rgba(15, 23, 42, 0.58);
+  box-shadow: 0 12px 32px rgba(2, 6, 23, 0.35);
+}
+
+.hero-neowake-rec__badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  padding: 0.22rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  background: rgba(196, 165, 116, 0.38);
+  border: 1px solid rgba(253, 224, 200, 0.42);
+  color: #fffbeb;
+}
+
+.hero-neowake-rec__name {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.02rem, 2.2vw, 1.12rem);
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.hero-neowake-rec__audio-brand {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(125, 211, 252, 0.88);
+}
+
+.hero-neowake-rec__teaser {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+}
+
+.hero-neowake-rec__cta {
+  margin: 0;
+}
+
+.hero-neowake-rec__cta .button {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .hero-neowake-rec__cta .button {
+    width: auto;
+  }
+}
+
 .hero-media {
   display: grid;
   grid-template-columns: 1fr;
@@ -254,6 +315,100 @@ button.button:active {
   object-fit: cover;
   border-radius: 12px;
   display: block;
+}
+
+.top-recommendation {
+  position: relative;
+  overflow: hidden;
+  padding: 2.5rem 0;
+  background:
+    linear-gradient(
+      155deg,
+      rgba(15, 23, 42, 0.92) 0%,
+      rgba(30, 41, 59, 0.88) 50%,
+      rgba(15, 23, 42, 0.9) 100%
+    ),
+    url("https://images.pexels.com/photos/3771115/pexels-photo-3771115.jpeg?auto=compress&cs=tinysrgb&fm=webp&w=1800")
+      center / cover no-repeat;
+}
+
+.top-recommendation .container {
+  position: relative;
+  z-index: 1;
+}
+
+.top-recommendation__panel {
+  max-width: 38rem;
+  padding: 1.45rem 1.55rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(125, 211, 252, 0.28);
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 48px rgba(2, 6, 23, 0.35);
+}
+
+.top-recommendation__badge {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  padding: 0.24rem 0.6rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #e2e8f0;
+}
+
+.top-recommendation__badge--trust {
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  background: rgba(196, 165, 116, 0.28);
+  border-color: rgba(253, 224, 200, 0.35);
+  color: #fef9c3;
+}
+
+.top-recommendation__audio-brand {
+  margin: -0.25rem 0 0.9rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.top-recommendation h2 {
+  color: #f8fafc;
+  margin-bottom: 0.55rem;
+}
+
+.top-recommendation__subtitle {
+  margin: 0 0 1rem;
+  color: #cbd5e1;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.top-recommendation__bullets {
+  margin: 0 0 1.15rem;
+  padding-left: 1.15rem;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.top-recommendation__bullets li {
+  margin-bottom: 0.45rem;
+}
+
+.top-recommendation__bullets li::marker {
+  color: #7dd3fc;
+}
+
+.top-recommendation__cta {
+  margin: 0;
 }
 
 /* —— Art direction system (calm premium sleep 40+) —— */
@@ -375,6 +530,22 @@ main.section > article.container > .breadcrumb + h1::before {
   font-size: 0.9rem;
   line-height: 1;
   opacity: 0.92;
+}
+
+.trust-pill--neowake::before {
+  content: "♪";
+  color: #b45309;
+  font-size: 0.85rem;
+}
+
+.hero--premium .trust-pill--neowake {
+  border-color: rgba(253, 224, 200, 0.4);
+  background: rgba(196, 165, 116, 0.22);
+  color: #fffbeb;
+}
+
+.hero--premium .trust-pill--neowake::before {
+  color: #fde68a;
 }
 
 .trust-pill--star::before {
@@ -552,6 +723,67 @@ p {
   background: #f8fafc;
 }
 
+.trust-below-hero {
+  padding: 1.75rem 0 1.85rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.trust-below-hero.section-light {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f3 100%);
+}
+
+.trust-below-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trust-below-hero__title {
+  margin: 0 0 1.05rem;
+  max-width: 26rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.12rem, 2.6vw, 1.42rem);
+  font-weight: 600;
+  color: var(--brand-strong);
+  line-height: 1.32;
+}
+
+.trust-below-hero__benefits {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  width: fit-content;
+  max-width: 100%;
+  text-align: left;
+}
+
+.trust-below-hero__benefits li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #3d4a44;
+  line-height: 1.5;
+}
+
+.trust-below-hero__benefits li:last-child {
+  margin-bottom: 0;
+}
+
+.trust-below-hero__benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.trust-below-hero__cta {
+  margin: 0;
+}
+
 .pill {
   display: inline-block;
   padding: 0.3rem 0.75rem;
@@ -664,6 +896,91 @@ p {
   object-fit: cover;
   border-radius: 10px;
   display: block;
+}
+
+.quiz-result-neowake {
+  margin: 1.15rem 0 1.1rem;
+  padding: 1.1rem 1rem 1.15rem;
+  border-radius: 14px;
+  border: 1px solid #c5d9ce;
+  background: linear-gradient(160deg, #fafcfb 0%, #eef4ef 55%, #e8f0ea 100%);
+  box-shadow: 0 6px 22px rgba(42, 53, 48, 0.06);
+}
+
+.quiz-result-neowake__badge {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  padding: 0.24rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  background: rgba(196, 165, 116, 0.28);
+  border: 1px solid rgba(74, 114, 104, 0.22);
+  color: #5c4d32;
+}
+
+.quiz-result-neowake__title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-weight: 600;
+  color: var(--brand-strong);
+  line-height: 1.25;
+}
+
+.quiz-result-neowake__audio-brand {
+  margin: 0 0 0.5rem;
+  font-size: 0.84rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #5a6b63;
+  line-height: 1.45;
+}
+
+.quiz-result-neowake__highlight {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #3d534c;
+  background: linear-gradient(135deg, rgba(196, 165, 116, 0.35) 0%, rgba(74, 114, 104, 0.14) 100%);
+  border: 1px solid rgba(74, 114, 104, 0.25);
+  border-radius: 10px;
+}
+
+.quiz-result-neowake__desc {
+  margin: 0 0 0.45rem;
+  color: #3d4a44;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.quiz-result-neowake__text {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.quiz-result-neowake__media {
+  margin: 0 0 0.9rem;
+}
+
+.quiz-result-neowake__media img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.quiz-result-neowake__cta {
+  margin: 0;
 }
 
 .quiz-recommendations li + li {
@@ -942,6 +1259,22 @@ p {
   margin: 0.6rem 0 0;
 }
 
+.compare-audio-hint {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0.45rem 0 0;
+  max-width: 44rem;
+}
+
+.program-card__audio-brand {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
 .trust-strip {
   display: flex;
   flex-wrap: wrap;
@@ -1006,6 +1339,23 @@ p {
   min-height: 520px;
   border: 0;
   background: #fff;
+}
+
+.hero-secondary {
+  margin: 0.65rem 0 0;
+  font-size: 0.92rem;
+}
+
+.hero-secondary a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.empfehlungen-audio-note {
+  margin: 1rem 0 0;
+  max-width: 42rem;
+  line-height: 1.55;
 }
 
 .quiz-embed-footer {
@@ -1205,6 +1555,15 @@ p {
 
   .hero-media img {
     height: 160px;
+  }
+
+  .top-recommendation {
+    padding: 2rem 0;
+  }
+
+  .top-recommendation__panel {
+    max-width: none;
+    padding: 1.2rem 1.15rem 1.3rem;
   }
 
   .editorial-hero__media {
