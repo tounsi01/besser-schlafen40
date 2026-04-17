@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.besser-schlafen40.de/sitemap.xml
+Sitemap: https://besser-schlafen40.de/sitemap.xml
