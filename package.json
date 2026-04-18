@@ -1,0 +1,8 @@
+{
+  "name": "besser-schlafen40",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-vercel.mjs"
+  }
+}

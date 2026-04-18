@@ -1,6 +1,6 @@
 """
 Regenerate sitemap index + sitemap-pages.xml + sitemap-articles.xml.
-Writes to public/ and project root (same filenames) for flexible deploys.
+Writes to static-mirror/ and project root (same filenames). Not the Vercel web root.
 """
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIKEL = ROOT / "artikel"
-PUBLIC = ROOT / "public"
+PUBLIC = ROOT / "static-mirror"
 
 BASE = "https://www.besser-schlafen40.de"
 TODAY = date.today().isoformat()
@@ -97,7 +97,7 @@ def main() -> None:
     idx = build_index()
     (PUBLIC / "sitemap.xml").write_text(idx, encoding="utf-8")
     (ROOT / "sitemap.xml").write_text(idx, encoding="utf-8")
-    print("OK: sitemap.xml, sitemap-pages.xml, sitemap-articles.xml (public/ + root)")
+    print("OK: sitemap.xml, sitemap-pages.xml, sitemap-articles.xml (static-mirror/ + root)")
 
 
 if __name__ == "__main__":
